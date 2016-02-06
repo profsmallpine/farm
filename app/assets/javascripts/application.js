@@ -10,7 +10,26 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+// TODO: Look at what can be removed (video stuff for sho)
+//
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-sprockets
+//= require magnific-popup
+//= require owl.carousel
 //= require_tree .
+//= require bootstrap-datepicker
+//= require jquery.timepicker.js
+//= require jquery.datepair.js
+//= require jquery.backstretch
+//= require video
+//= require bigvideo
+//= require jqBootstrapValidation
+//= require gmaps
+//= require jquery.matchHeight
+//= require twitterFetcher
+//= require fitvids.js
+//= require smoothscroll
+//= require wow
+//= require custom
