@@ -1,0 +1,14 @@
+%footer#footer
+  .container
+    .row
+      .col-sm-12
+        %p.copyright
+          © #{Time.current.year}
+          = succeed ',' do
+            %a{href: root_path} TuckerFamilyFarm
+          All Rights Reserved.
+
+-# TODO: on_hover is not working for icon
+.scroll-up.page-scroll
+  %a{href: '#totop'}
+    %i.fa.fa-angle-double-up
