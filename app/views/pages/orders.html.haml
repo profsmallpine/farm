@@ -1,1 +1,84 @@
-%h1 Orders
+%section#tff-products.callout
+  .container
+    .row
+      .col-sm-2.col-sm-offset-5.text-center.long-down
+        = image_tag 'tucker_farm_divider_top'
+    .row
+      .col-sm-10.col-sm-offset-1
+        %h2.callout-text Order Here
+
+%section.module
+  .container
+    .row.long-down.text-center
+      .col-sm-12
+        %h3
+          Thank you for your interest in purchasing high-quality,
+          sustainably-raised products from the Tucker Family Farm.
+    .row
+      .col-sm-4
+        .menu-classic
+          %figure.overlay
+            = image_tag 'tucker_farm_gallery_5' do
+              %figcaption
+                = link_to '', image_path('tucker_farm_gallery_5'), class: 'popup-image', title: 'Pigs'
+                .caption-inner
+                  .overlay-icon
+                    %span.icon-magnifier
+            .menu
+              .row
+                .col-sm-9
+                  %h4.menu-title Pasture Pork - Available year-round
+                  .menu-detail Sold half or whole - $3.50/lb)
+                .col-sm-3.menu-price-detail
+                  %h4.menu-price
+      .col-sm-4
+        .menu-classic
+          %figure.overlay
+            = image_tag 'tucker_farm_gallery_2' do
+              %figcaption
+                = link_to '', image_path('tucker_farm_gallery_2'), class: 'popup-image', title: 'Sheep'
+                .caption-inner
+                  .overlay-icon
+                    %span.icon-magnifier
+            .menu
+              .row
+                .col-sm-9
+                  %h4.menu-title Grass Fed Lamb - Limited availability
+                  .menu-detail Sold half or whole - $5.00/lb.
+                .col-sm-3.menu-price-detail
+                  %h4.menu-price
+      .col-sm-4
+        .menu-classic
+          %figure.overlay
+            = image_tag 'tucker_farm_gallery_4' do
+              %figcaption
+                = link_to '', image_path('tucker_farm_gallery_4'), class: 'popup-image', title: 'Sheep cheese'
+                .caption-inner
+                  .overlay-icon
+                    %span.icon-magnifier
+            .menu
+              .row
+                .col-sm-9
+                  %h4.menu-title Cave-Aged Sheep Cheese
+                  .menu-detail Coming early summer of 2015
+                .col-sm-3.menu-price-detail
+                  %h4.menu-price
+                  %span.menu-label New
+    .row
+      .col-sm-6.col-sm-offset-3
+        .module-header
+          %br
+          %br
+          %h2.module-title Here's how it works
+    .row.long-down
+      .col-sm-12
+        %p
+          You buy all products directly from the farm. Contact us to tell
+          us which products you would like to purchase and to check on
+          availability. Pigs and lambs will be butchered by a local
+          butcher. You then pay the slaughter and butcher fee to the
+          butcher. We are willing to meet people and/or drop-off your
+          products for a small mileage fee, but we suggest you drive down
+          to pick up your products so you can visit the farm and see how
+          it all works.
+  = render 'order'

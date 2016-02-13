@@ -1,0 +1,36 @@
+%section#tff-contact.callout
+  .container
+    .row
+      .col-sm-2.col-sm-offset-5.text-center.long-down
+        = image_tag 'tucker_farm_divider_top'
+    .row
+      .col-sm-10.col-sm-offset-1
+        %h2.callout-text Contact
+
+%section.module
+  .container
+    .row
+      .col-sm-6.col-sm-offset-3
+        .module-header
+          %h1.module-title Contact us
+          %h2.module-subtitle Drop us a line
+    .row
+      .col-md-6.col-sm-offset-3
+        %form#contact-form{:action => "/email/sendemail", :method => "POST"}
+          .row
+            .col-sm-6.form-group
+              %label.sr-only{:for => "bname"} Name
+              %input#bname.form-control{"aria-required" => "true", "data-validation-required-message" => "Please enter your name.", :name => "Name", :placeholder => "Name", :required => "", :type => "text"}/
+              %p.help-block.text-danger
+            .col-sm-6.form-group
+              %label.sr-only{:for => "bphone"} Email
+              %input#bemail.form-control{"aria-required" => "true", "data-validation-required-message" => "Please enter your email address.", :name => "UserEmail", :placeholder => "Email", :required => "", :type => "email"}/
+              %p.help-block.text-danger
+          .row
+            .col-sm-12.form-group
+              %textarea#bmessage.form-control{"aria-required" => "true", "data-validation-required-message" => "Please enter your message.", :name => "UserMessage", :placeholder => "Message", :required => "", :rows => "4"}
+              %p.help-block.text-danger
+          .row
+            .col-sm-12.text-center
+              %button.btn.btn-custom-1{:type => "submit"} Submit
+        #contact-response.ajax-response

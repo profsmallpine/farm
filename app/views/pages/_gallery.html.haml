@@ -1,0 +1,71 @@
+%section#gallery
+  .row.position-relative.margin-0
+    .col-xs-12.col-md-4.side-image
+      .vertical-body
+        .vertical
+          .module-header.wow.fadeInUp
+            %h2.module-title Gallery
+            %h3.module-subtitle see the gallery
+          .long-down
+            %p
+              We sell locally and directly to customers in the Missoula and
+              Bitterroot Valley areas, as well as to customers all across
+              Montana. This is our life. Come check it out.
+          = link_to 'View Gallery', gallery_path, class: 'btn btn-custom-1'
+    .col-xs-12.col-md-8.col-md-offset-4.gallery-no-padding
+      .row
+        .col-sm-4
+          .gallery-item
+            %figure.overlay
+              = image_tag 'tucker_farm_gallery_1'
+              %figcaption
+                = link_to '', image_path('tucker_farm_gallery_1'), class: 'gallery', title: 'Tyler and goat'
+                .caption-inner
+                  .overlay-icon
+                    %span.icon-magnifier
+        .col-sm-4
+          .gallery-item
+            %figure.overlay
+              = image_tag 'tucker_farm_gallery_2'
+              %figcaption
+                = link_to '', image_path('tucker_farm_gallery_2'), class: 'gallery', title: 'Sheeep'
+                .caption-inner
+                  .overlay-icon
+                    %span.icon-magnifier
+        .col-sm-4
+          .gallery-item
+            %figure.overlay
+              = image_tag 'tucker_farm_gallery_3'
+              %figcaption
+                = link_to '', image_path('tucker_farm_gallery_3'), class: 'gallery', title: 'Tyler and Rowan'
+                .caption-inner
+                  .overlay-icon
+                    %span.icon-magnifier
+      .row
+        .col-sm-4
+          .gallery-item
+            %figure.overlay
+              = image_tag 'tucker_farm_gallery_4'
+              %figcaption
+                = link_to '', image_path('tucker_farm_gallery_4'), class: 'gallery', title: 'Tyler, Rowan, and sheeep'
+                .caption-inner
+                  .overlay-icon
+                    %span.icon-magnifier
+        .col-sm-4
+          .gallery-item
+            %figure.overlay
+              = image_tag 'tucker_farm_gallery_5'
+              %figcaption
+                = link_to '', image_path('tucker_farm_gallery_5'), class: 'gallery', title: 'Pigs pigs pigs'
+                .caption-inner
+                  .overlay-icon
+                    %span.icon-magnifier
+        .col-sm-4
+          .gallery-item
+            %figure.overlay
+              = image_tag 'tucker_farm_gallery_6'
+              %figcaption
+                = link_to '', image_path('tucker_farm_gallery_6'), class: 'gallery', title: 'Pigs pigs'
+                .caption-inner
+                  .overlay-icon
+                    %span.icon-magnifier

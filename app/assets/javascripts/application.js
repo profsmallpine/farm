@@ -26,7 +26,6 @@
 //= require video
 //= require bigvideo
 //= require jqBootstrapValidation
-//= require gmaps
 //= require jquery.matchHeight
 //= require twitterFetcher
 //= require fitvids.js

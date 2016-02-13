@@ -40,6 +40,7 @@ GEM
       method_source
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    addressable (2.4.0)
     animate-rails (1.0.9)
       rails
     arel (7.0.0)
@@ -82,8 +83,6 @@ GEM
       sass (>= 3.2)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
-    gmaps-rails (0.0.2)
-      rails
     haml (4.0.7)
       tilt
     hirb (0.7.3)
@@ -106,6 +105,10 @@ GEM
     jquery-timepicker-rails (1.4.3)
       railties (>= 3.1.0)
     json (1.8.3)
+    launchy (2.4.3)
+      addressable (~> 2.3)
+    letter_opener (1.4.1)
+      launchy (~> 2.2)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     magnific-popup-rails (1.0.0)
@@ -221,12 +224,12 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   fitvidsjs_rails
   font-awesome-sass (~> 4.5.0)
-  gmaps-rails
   haml
   jazz_fingers
   jbuilder (~> 2.0)
   jquery-rails
   jquery-timepicker-rails
+  letter_opener
   magnific-popup-rails
   owlcarousel-rails
   pg (~> 0.18)

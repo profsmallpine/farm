@@ -1,0 +1,79 @@
+%section.module
+  .container
+    .row
+      .col-sm-6.col-sm-offset-3
+        .module-header.wow.fadeInUp
+          %h2.module-title Gallery
+          %h3.module-subtitle Photos of our place
+    .row
+      .col-sm-4
+        .gallery-item
+          %figure.overlay
+            = image_tag 'tucker_farm_gallery_1'
+            %figcaption
+              = link_to '', image_path('tucker_farm_gallery_1'), class: 'gallery', title: 'Tyler and goat'
+              .caption-inner
+                .overlay-icon
+                  %span.icon-magnifier
+          .gallery-detail
+            %h4.gallery-title Tyler and goat
+      .col-sm-4
+        .gallery-item
+          %figure.overlay
+            = image_tag 'tucker_farm_gallery_2'
+            %figcaption
+              = link_to '', image_path('tucker_farm_gallery_2'), class: 'gallery', title: 'Sheeep'
+              .caption-inner
+                .overlay-icon
+                  %span.icon-magnifier
+          .gallery-detail
+            %h4.gallery-title Sheeep
+      .col-sm-4
+        .gallery-item
+          %figure.overlay
+            = image_tag 'tucker_farm_gallery_3'
+            %figcaption
+              = link_to '', image_path('tucker_farm_gallery_3'), class: 'gallery', title: 'Tyler and Rowan'
+              .caption-inner
+                .overlay-icon
+                  %span.icon-magnifier
+          .gallery-detail
+            %h4.gallery-title Tyler and Rowan
+    .row
+      .col-sm-4
+        .gallery-item
+          %figure.overlay
+            = image_tag 'tucker_farm_gallery_4'
+            %figcaption
+              = link_to '', image_path('tucker_farm_gallery_4'), class: 'gallery', title: 'Tyler, Rowan, and sheeep'
+              .caption-inner
+                .overlay-icon
+                  %span.icon-magnifier
+          .gallery-detail
+            %h4.gallery-title Tyler, Rowan, and sheeep
+      .col-sm-4
+        .gallery-item
+          %figure.overlay
+            = image_tag 'tucker_farm_gallery_5'
+            %figcaption
+              = link_to '', image_path('tucker_farm_gallery_5'), class: 'gallery', title: 'Pigs pigs pigs'
+              .caption-inner
+                .overlay-icon
+                  %span.icon-magnifier
+          .gallery-detail
+            %h4.gallery-title Pigs pigs pigs
+      .col-sm-4
+        .gallery-item
+          %figure.overlay
+            = image_tag 'tucker_farm_gallery_6'
+            %figcaption
+              = link_to '', image_path('tucker_farm_gallery_6'), class: 'gallery', title: 'Pigs pigs'
+              .caption-inner
+                .overlay-icon
+                  %span.icon-magnifier
+          .gallery-detail
+            %h4.gallery-title Pigs pigs
+    .row
+      .col-sm-6.col-sm-offset-3
+        .devider
+          = image_tag 'tucker_farm_icon'

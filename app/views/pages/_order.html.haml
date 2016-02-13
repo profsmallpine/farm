@@ -1,0 +1,41 @@
+-# TODO: turn this into a form_for (with working email), maybe use formtastic
+%section#reservations.module
+  .container
+    .row
+      .col-sm-6.col-sm-offset-3
+        .module-header.wow.fadeInUp
+          %h2.module-title Order some meat!
+          %h3.module-subtitle Isn't it time?
+    .row
+      .col-sm-8.col-sm-offset-2
+        %form#booking-form{:action => "/email/sendemail", :method => "POST", :role => "form"}
+          .row
+            .col-sm-6.form-group
+              %label.sr-only{:for => "bname"} Name
+              %input#bname.form-control{"aria-required" => "true", "data-validation-required-message" => "Please enter your name.", :name => "Name", :placeholder => "Name", :required => "", :type => "text"}/
+              %p.help-block.text-danger
+            .col-sm-6.form-group
+              %label.sr-only{:for => "bphone"} Phone
+              %input#bphone.form-control{"aria-required" => "true", "data-validation-required-message" => "Please enter your phone number.", :name => "Phone", :placeholder => "Phone", :required => "", :type => "tel"}/
+              %p.help-block.text-danger
+          .row
+            .col-sm-6.form-group
+              %label.sr-only{:for => "bemail"} Email
+              %input#bemail.form-control{"aria-required" => "true", "data-validation-required-message" => "Please enter your email address.", :name => "UserEmail", :placeholder => "Email", :required => "", :type => "email"}/
+              %p.help-block
+            .col-sm-6.form-group
+              %label.sr-only{:for => "bpeople"} How many people?
+              %input#bpeople.form-control{"aria-required" => "true", "data-validation-required-message" => "Please enter number of guests.", :name => "HowMuch", :placeholder => "How much?", :required => "", :type => "text"}/
+              %p.help-block.text-danger
+          .row
+            .col-sm-12.form-group
+              %textarea#bmessage.form-control{"aria-required" => "true", "data-validation-required-message" => "Please enter your special requests.", :name => "SpecialRequests", :placeholder => "Special Requests", :required => "", :rows => "4"}
+              %p.help-block.text-danger
+          .row
+            .col-sm-12.text-center
+              %button.btn.btn-custom-1{:type => "submit"} Submit
+        #booking-response.ajax-response
+    .row
+      .col-sm-6.col-sm-offset-3
+        .devider
+          = image_tag 'tucker_farm_icon'

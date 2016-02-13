@@ -28,7 +28,6 @@ gem 'bootstrap-datepicker-rails'
 gem 'jquery-timepicker-rails'
 gem 'backstretch-rails'
 gem 'videojs_rails'
-gem 'gmaps-rails'
 gem 'fitvidsjs_rails'
 gem 'wow-rails'
 
@@ -42,6 +41,7 @@ group :development do
   gem 'binding_of_caller'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'letter_opener'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
