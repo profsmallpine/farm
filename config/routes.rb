@@ -11,4 +11,8 @@ Rails.application.routes.draw do
   get '/careers', to: 'pages#careers'
   get '/gallery', to: 'pages#gallery'
   get '/contact', to: 'pages#contact'
+
+  %w( 404 500 ).each do |code|
+    get code, to: 'errors#show', code: code
+  end
 end
