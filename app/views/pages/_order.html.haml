@@ -1,5 +1,5 @@
 -# TODO: turn this into a form_for (with working email), maybe use formtastic
-%section#reservations.module
+%section#orders.module
   .container
     .row
       .col-sm-6.col-sm-offset-3
@@ -8,33 +8,30 @@
           %h3.module-subtitle Isn't it time?
     .row
       .col-sm-8.col-sm-offset-2
-        %form#booking-form{:action => "/email/sendemail", :method => "POST", :role => "form"}
+        = render 'shared/success'
+        = render 'shared/errors', object: @order
+        = form_for @order, url: create_order_path(anchor: 'orders'), html: { id: 'booking-form', role: 'form' } do |f|
           .row
             .col-sm-6.form-group
-              %label.sr-only{:for => "bname"} Name
-              %input#bname.form-control{"aria-required" => "true", "data-validation-required-message" => "Please enter your name.", :name => "Name", :placeholder => "Name", :required => "", :type => "text"}/
+              = f.text_field :name, class: 'form-control', placeholder: 'Name', required: true
               %p.help-block.text-danger
             .col-sm-6.form-group
-              %label.sr-only{:for => "bphone"} Phone
-              %input#bphone.form-control{"aria-required" => "true", "data-validation-required-message" => "Please enter your phone number.", :name => "Phone", :placeholder => "Phone", :required => "", :type => "tel"}/
+              = f.phone_field :phone, class: 'form-control', placeholder: 'Phone', required: true
               %p.help-block.text-danger
           .row
             .col-sm-6.form-group
-              %label.sr-only{:for => "bemail"} Email
-              %input#bemail.form-control{"aria-required" => "true", "data-validation-required-message" => "Please enter your email address.", :name => "UserEmail", :placeholder => "Email", :required => "", :type => "email"}/
+              = f.email_field :email, class: 'form-control', placeholder: 'Email', required: true
               %p.help-block
             .col-sm-6.form-group
-              %label.sr-only{:for => "bpeople"} How many people?
-              %input#bpeople.form-control{"aria-required" => "true", "data-validation-required-message" => "Please enter number of guests.", :name => "HowMuch", :placeholder => "How much?", :required => "", :type => "text"}/
+              = f.text_field :how_much, class: 'form-control', placeholder: 'How much?', required: true
               %p.help-block.text-danger
           .row
             .col-sm-12.form-group
-              %textarea#bmessage.form-control{"aria-required" => "true", "data-validation-required-message" => "Please enter your special requests.", :name => "SpecialRequests", :placeholder => "Special Requests", :required => "", :rows => "4"}
+              = f.text_area :body, class: 'form-control', placeholder: 'Special Requests', required: true, rows: '4'
               %p.help-block.text-danger
           .row
             .col-sm-12.text-center
-              %button.btn.btn-custom-1{:type => "submit"} Submit
-        #booking-response.ajax-response
+              = f.submit 'Submit', class: 'btn btn-custom-1'
     .row
       .col-sm-6.col-sm-offset-3
         .devider

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/pork', to: 'pages#pork'
   get '/lamb', to: 'pages#lamb'
   get '/orders', to: 'pages#orders'
+  post '/orders', to: 'pages#create_order', as: :create_order
   get '/careers', to: 'pages#careers'
   get '/gallery', to: 'pages#gallery'
   get '/contact', to: 'pages#contact'

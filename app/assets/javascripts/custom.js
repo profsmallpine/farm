@@ -279,55 +279,55 @@
 		 * Booking form ajax
 		/* ---------------------------------------------- */
 
-		$('#booking-form').find('input,textarea').jqBootstrapValidation({
-			preventSubmit: true,
-			submitError: function($form, event, errors) {
-				// additional error messages or events
-			},
-			submitSuccess: function($form, event) {
-				event.preventDefault();
-
-				var submit          = $('#booking-form submit');
-				var ajaxResponse    = $('#booking-response');
-
-				var name            = $("input#bname").val();
-				var phone           = $("input#bphone").val();
-				var email           = $("input#bemail").val();
-				var people          = $('input#bpeople').val();
-				var date            = $('input#bdate').val();
-				var time            = $('input#btime').val();
-				var message         = $("textarea#bmessage").val();
-
-				$.ajax({
-					type: 'POST',
-					url: 'assets/php/booking.php',
-					dataType: 'json',
-					data: {
-						name: name,
-						phone: phone,
-						email: email,
-						people: people,
-						date: date,
-						time: time,
-						message: message
-					},
-					cache: false,
-					beforeSend: function(result) {
-						submit.empty();
-						submit.append('<i class="fa fa-cog fa-spin"></i> Wait...');
-					},
-					success: function(result) {
-						if(result.sendstatus == 1) {
-							ajaxResponse.html(result.message);
-							$form.fadeOut(500);
-						} else {
-							ajaxResponse.html(result.message);
-						}
-					}
-				});
-			}
-
-		});
+		// $('#booking-form').find('input,textarea').jqBootstrapValidation({
+		// 	preventSubmit: true,
+		// 	submitError: function($form, event, errors) {
+		// 		// additional error messages or events
+		// 	},
+		// 	submitSuccess: function($form, event) {
+		// 		event.preventDefault();
+		//
+		// 		var submit          = $('#booking-form submit');
+		// 		var ajaxResponse    = $('#booking-response');
+		//
+		// 		var name            = $("input#bname").val();
+		// 		var phone           = $("input#bphone").val();
+		// 		var email           = $("input#bemail").val();
+		// 		var people          = $('input#bpeople').val();
+		// 		var date            = $('input#bdate').val();
+		// 		var time            = $('input#btime').val();
+		// 		var message         = $("textarea#bmessage").val();
+		//
+		// 		$.ajax({
+		// 			type: 'POST',
+		// 			url: 'assets/php/booking.php',
+		// 			dataType: 'json',
+		// 			data: {
+		// 				name: name,
+		// 				phone: phone,
+		// 				email: email,
+		// 				people: people,
+		// 				date: date,
+		// 				time: time,
+		// 				message: message
+		// 			},
+		// 			cache: false,
+		// 			beforeSend: function(result) {
+		// 				submit.empty();
+		// 				submit.append('<i class="fa fa-cog fa-spin"></i> Wait...');
+		// 			},
+		// 			success: function(result) {
+		// 				if(result.sendstatus == 1) {
+		// 					ajaxResponse.html(result.message);
+		// 					$form.fadeOut(500);
+		// 				} else {
+		// 					ajaxResponse.html(result.message);
+		// 				}
+		// 			}
+		// 		});
+		// 	}
+		//
+		// });
 
 		/* ---------------------------------------------- /*
 		 * Contact form ajax
