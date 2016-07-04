@@ -1,7 +1,5 @@
 class PagesController < ApplicationController
-  def index
-    @order = Email.new
-  end
+  def index; end
 
   def cheese; end
 
@@ -17,27 +15,37 @@ class PagesController < ApplicationController
 
   def gallery; end
 
-  def contact; end
+  def contact
+    @contact = Email.new
+  end
 
   def create_order
     # TODO: setup active job to send mailer
     # TODO: have mailer be "from" contact's email
-    # TODO: make order form work from index page or orders page
     # TODO: create pretty layout for mailer with tucker ff logo
     # TODO: test that mailer is working with gmail account
-    # TODO: add better email + phone number validation
     @order = Email.new(order_params)
 
     if @order.valid?
-      redirect_to root_path(anchor: 'orders'), success: 'Order successfully sent'
+      redirect_to orders_path, success: 'Order successfully sent.'
     else
-      render 'index'
+      render 'orders'
     end
   end
 
   def create_contact
-    # TODO: add route for contact mailer
-    # TODO: fix email model to work with contact + order mailers
+    # TODO: setup active job to send mailer
+    # TODO: have mailer be "from" contact's email
+    # TODO: create pretty layout for mailer with tucker ff logo
+    # TODO: test that mailer is working with gmail account
+    @contact = Email.new(order_params)
+
+    if @contact.valid?
+      redirect_to contact_path, success: 'Message successfully sent.'
+    else
+      flash.now[:error] = @contact.errors.full_messages.to_sentence
+      render 'contact'
+    end
   end
 
   private

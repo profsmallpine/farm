@@ -1,5 +1,0 @@
-- if object.errors.present?
-  .alert.alert-danger.long.alert-dismissible
-    %button.close{ 'data-dismiss': 'alert', 'aria-label': 'Close', style: 'top: 5px;' }
-      %span{ 'aria-hidden': 'true' } &times;
-    = object.errors.full_messages.to_sentence

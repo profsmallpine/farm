@@ -32,6 +32,10 @@ gem 'videojs_rails'
 gem 'fitvidsjs_rails'
 gem 'wow-rails'
 
+# tools
+gem 'phony_rails'
+
+
 group :development, :test do
   gem 'pry-rails'
   gem 'jazz_fingers'

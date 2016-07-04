@@ -8,9 +8,8 @@
           %h3.module-subtitle Isn't it time?
     .row
       .col-sm-8.col-sm-offset-2
-        = render 'shared/success'
-        = render 'shared/errors', object: @order
-        = form_for @order, url: create_order_path(anchor: 'orders'), html: { id: 'booking-form', role: 'form' } do |f|
+        = render 'shared/flash'
+        = form_for @order, url: create_order_path do |f|
           .row
             .col-sm-6.form-group
               = f.text_field :name, class: 'form-control', placeholder: 'Name', required: true

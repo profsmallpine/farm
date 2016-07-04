@@ -16,16 +16,16 @@
         %li{class: "#{'active' if current_page?(cheese_path)}"}
           = link_to 'Cheese', cheese_path
         %li.dropdown
-          %a.dropdown-toggle{class: "#{'active' if current_page?(lamb_path) || current_page?(pork_path)}", href: '#', 'data-toggle' => 'dropdown', 'aria-expanded' => true}
-            Animals
+          %a.dropdown-toggle{class: "#{'active' if current_page?(lamb_path) || current_page?(pork_path) || current_page?(orders_path)}", href: '#', 'data-toggle' => 'dropdown', 'aria-expanded' => true}
+            Meat Products
             %span.caret
           %ul.dropdown-menu{role: 'menu'}
             %li{class: "#{'active' if current_page?(pork_path)}"}
               = link_to 'Pork', pork_path
             %li{class: "#{'active' if current_page?(lamb_path)}"}
               = link_to 'Lamb', lamb_path
-        %li{class: "#{'active' if current_page?(orders_path)}"}
-          = link_to 'Orders', orders_path
+            %li{class: "#{'active' if current_page?(orders_path)}"}
+              = link_to 'Orders', orders_path
         %li{class: "#{'active' if current_page?(careers_path)}"}
           = link_to 'Careers + Internships', careers_path
         %li{class: "#{'active' if current_page?(gallery_path)}"}
