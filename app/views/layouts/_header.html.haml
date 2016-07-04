@@ -7,7 +7,7 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      -# TODO: add farm logo instead of text + try invisible header
+      -# TODO: add farm logo instead of text
       %a.navbar-brand{href: root_path} Tucker Family Farm
     #custom-collapse.collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right
@@ -27,7 +27,7 @@
             %li{class: "#{'active' if current_page?(orders_path)}"}
               = link_to 'Orders', orders_path
         %li{class: "#{'active' if current_page?(careers_path)}"}
-          = link_to 'Careers + Internships', careers_path
+          = link_to 'Careers', careers_path
         %li{class: "#{'active' if current_page?(gallery_path)}"}
           = link_to 'Gallery', gallery_path
         %li{class: "#{'active' if current_page?(contact_path)}"}
