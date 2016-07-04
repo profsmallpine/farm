@@ -11,10 +11,10 @@
 // about supported directives.
 //
 // TODO: Look at what can be removed (video stuff for sho)
+// TODO: Don't load all language datepickers
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap-sprockets
 //= require magnific-popup
 //= require owl.carousel

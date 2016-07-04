@@ -1,1 +1,185 @@
-%h1 Cheese
+%section#cheese.module
+  .container
+    .row
+      .col-sm-6.col-sm-offset-3
+        .module-header.wow.fadeInUp
+          %h2.module-title Our Cheeses
+          %h3.module-subtitle Artisan crafted cheese with character
+
+    %ul.nav.nav-tabs
+      %li.active
+        %a{"data-toggle" => "tab", :href => "#tab1"} Hard Cheese
+      %li
+        %a{"data-toggle" => "tab", :href => "#tab2"} Soft, Brined Cheese
+      %li
+        %a{"data-toggle" => "tab", :href => "#tab3"} Fresh Cheese
+      %li
+        %a{"data-toggle" => "tab", :href => "#tab4"} Semi-Soft Cheese
+
+    .tab-content.long-down
+      #tab1.tab-pane.active
+        .row
+          .col-sm-6
+            .menu-classic
+              %figure.overlay
+                = image_tag 'tucker_cheese_harbinger'
+                %figcaption
+                  = link_to '', image_path('tucker_cheese_feta'), class: 'popup-image', title: 'Harbinger cheese'
+                  .caption-inner
+                    .overlay-icon
+                      %span.icon-magnifier
+              .menu
+                .row
+                  .col-sm-12
+                    %h4.menu-title
+                      Harbinger
+                      %span.label.label-default
+                        [hahr-bin-jer] -  one that presages or foreshadows what
+                        is to come
+
+                    .menu-detail
+                      A young Manchego style cheese. We deviate from a
+                      traditional Manchego by washing this cheese every few days
+                      with Draught Work’s Oatmeal Stout, insuring a soft,
+                      easy slicing texture and a beautiful rind, as well as
+                      imparting hints of the beer’s unique flavor, creating a
+                      unique experience. The smooth texture makes this a great
+                      slicing cheese and the colorful rind makes it stand out
+                      on a cheese board. This cheese was highlighted in Sip
+                      Northwest’s 2015 Best of the West issue, paired with a
+                      local cider from Montana Ciderworks. Aged a minimum of
+                      3 months.
+                      %span.label.label-info
+                        Sold in 6-7 oz. wedges or 5-6 pound wheels
+
+          .col-sm-6
+            .menu-classic
+              %figure.overlay
+                = image_tag 'tucker_cheese_sentinel'
+                %figcaption
+                  = link_to '', image_path('tucker_cheese_feta'), class: 'popup-image', title: 'Sentinel cheese'
+                  .caption-inner
+                    .overlay-icon
+                      %span.icon-magnifier
+              .menu
+                .row
+                  .col-sm-12
+                    %h4.menu-title
+                      Sentinel
+                      %span.label.label-default
+                        [sent(ə)nəl] – to stand watch (check)
+                    .menu-detail
+                      Our oldest cheese, a Pecorino Romano style hard cheese,
+                      perfect for grating but also for slicing. The Sentinel is
+                      aged for a minimum of 8 months, giving this cheese a
+                      distinct sharp and spicy flavor with mild buttery
+                      characteristics. Savor this cheese grated on top of your
+                      favorite pasta dish, or for desert with honey drizzled
+                      over the top.
+
+      #tab2.tab-pane
+        .row
+          .col-sm-6
+            .menu-classic
+              %figure.overlay
+                = image_tag 'tucker_cheese_feta'
+                %figcaption
+                  = link_to '', image_path('tucker_cheese_feta'), class: 'popup-image', title: 'Feta cheese'
+                  .caption-inner
+                    .overlay-icon
+                      %span.icon-magnifier
+              .menu
+                .row
+                  .col-sm-12
+                    %h4.menu-title Feta
+                    .menu-detail
+                      Traditional Feta is made of 100% sheep’s milk or a
+                      combination of sheep and goat milk (only 30% goats milk is
+                      allowed in traditional feta). Our traditionally crafted
+                      sheep’s milk feta is smooth and creamy in texture, as only
+                      sheep milk cheeses can be, it is slightly salty and heavy
+                      on the cream in its flavor profile. Sticking to tradition,
+                      we sell our feta in whey brine (the salted whey from
+                      making the feta) instead of just in a salt brine.
+
+      #tab3.tab-pane
+        .row
+          .col-sm-6
+            .menu-classic
+              %figure.overlay
+                = image_tag 'tucker_cheese_ricotta'
+                %figcaption
+                  = link_to '', image_path('tucker_cheese_ricotta'), class: 'popup-image', title: 'Ricotta Romana cheese'
+                  .caption-inner
+                    .overlay-icon
+                      %span.icon-magnifier
+              .menu
+                .row
+                  .col-sm-12
+                    %h4.menu-title Ricotta Romana
+                    .menu-detail
+                      This is a traditional ricotta, made with 100% sheep’s
+                      milk whey. Whey ricotta is uniquely different from
+                      ricotta made from milk – whole milk is used
+                      industrially to increase the yield. Our 100% whey
+                      ricotta is light, sweet and drier than its
+                      mass-produced counterpart. Enjoy simply with fresh
+                      summer fruit or with your favorite pasta dishes. This
+                      is ricotta the whey it was meant to be.
+
+      #tab4.tab-pane
+        .row
+          .col-sm-6
+            .menu-classic
+              %figure.overlay
+                = image_tag 'tucker_cheese_zephyr'
+                %figcaption
+                  = link_to '', image_path('tucker_cheese_feta'), class: 'popup-image', title: 'Zephyr cheese'
+                  .caption-inner
+                    .overlay-icon
+                      %span.icon-magnifier
+              .menu
+                .row
+                  .col-sm-12
+                    %h4.menu-title
+                      Zephyr
+                      %span.label.label-default [zef-er] – a gentle, westerly breeze
+
+                    .menu-detail
+                      A bloomy-rind blue cheese. This is a rich and creamy brie
+                      style cheese with a soft smooth paste. We then contrast the
+                      supple Brie by adding p. roqueforti culture (a blue cheese
+                      mold), rounding out the cheese with the spicy piquancy of
+                      a blue. Delightful with a fresh French baguette but also
+                      great baked by itself or in a pastry crust. It is
+                      particularly important with this cheese to let it warm to
+                      room temperature before enjoying to get its true flavor
+                      and texture. The rind on this cheese is edible and
+                      delicious and should be enjoyed as part of the experience.
+          .col-sm-6
+            .menu-classic
+              %figure.overlay
+                = image_tag 'tucker_cheese_default'
+                %figcaption
+                  = link_to '', image_path('tucker_cheese_feta'), class: 'popup-image', title: 'Petrichor cheese'
+                  .caption-inner
+                    .overlay-icon
+                      %span.icon-magnifier
+              .menu
+                .row
+                  .col-sm-12
+                    %h4.menu-title
+                      Petrichor
+                      %span.label.label-default
+                        [PET-ri-kuhr] – a pleasant smell that frequently
+                        accompanies the first rain after a long period of warm,
+                        dry weather
+                    .menu-detail
+                      Our “baby” (young) blue cheese.  “Baby” in size and age
+                      but not in flavor with a rich creamy texture and lots of
+                      blue both on the inside but also on the rind. Enjoy with a
+                      tart apple, or do as the French do and top your buttered
+                      bread with some blue. This cheese melts well and can turn
+                      an ordinary burger into something remarkable. The rind on
+                      this cheese is edible and delicious and should be enjoyed
+                      as part of the experience.
