@@ -13,19 +13,17 @@
       %ul.nav.navbar-nav.navbar-right
         %li{class: "#{'active' if current_page?(root_path)}"}
           = link_to 'Home', root_path
-        %li{class: "#{'active' if current_page?(cheese_path)}"}
-          = link_to 'Cheese', cheese_path
         %li.dropdown
-          %a.dropdown-toggle{class: "#{'active' if current_page?(lamb_path) || current_page?(pork_path) || current_page?(orders_path)}", href: '#', 'data-toggle' => 'dropdown', 'aria-expanded' => true}
-            Meat Products
+          %a.dropdown-toggle{class: "#{'active' if current_page?(animals_path) || current_page?(orders_path)}", href: '#', 'data-toggle' => 'dropdown', 'aria-expanded' => true}
+            Farm
             %span.caret
           %ul.dropdown-menu{role: 'menu'}
-            %li{class: "#{'active' if current_page?(pork_path)}"}
-              = link_to 'Pork', pork_path
-            %li{class: "#{'active' if current_page?(lamb_path)}"}
-              = link_to 'Lamb', lamb_path
+            %li{class: "#{'active' if current_page?(animals_path)}"}
+              = link_to 'Animals', animals_path
             %li{class: "#{'active' if current_page?(orders_path)}"}
               = link_to 'Orders', orders_path
+        %li{class: "#{'active' if current_page?(creamery_path)}"}
+          = link_to 'Creamery', creamery_path
         %li{class: "#{'active' if current_page?(careers_path)}"}
           = link_to 'Careers', careers_path
         %li{class: "#{'active' if current_page?(gallery_path)}"}

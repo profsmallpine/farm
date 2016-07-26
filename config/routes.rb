@@ -4,9 +4,8 @@ Rails.application.routes.draw do
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'
   root to: 'pages#index'
-  get '/cheese', to: 'pages#cheese'
-  get '/pork', to: 'pages#pork'
-  get '/lamb', to: 'pages#lamb'
+  get '/creamery', to: 'pages#creamery'
+  get '/animals', to: 'pages#animals'
   get '/orders', to: 'pages#orders'
   post '/orders', to: 'pages#create_order', as: :create_order
   get '/careers', to: 'pages#careers'

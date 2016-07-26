@@ -1,11 +1,9 @@
 class PagesController < ApplicationController
   def index; end
 
-  def cheese; end
+  def creamery; end
 
-  def pork; end
-
-  def lamb; end
+  def animals; end
 
   def orders
     @order = Email.new
@@ -41,6 +39,7 @@ class PagesController < ApplicationController
     @contact = Email.new(order_params)
 
     if @contact.valid?
+      ContactMailer.contact_email.deliver_now
       redirect_to contact_path, success: 'Message successfully sent.'
     else
       flash.now[:error] = @contact.errors.full_messages.to_sentence
