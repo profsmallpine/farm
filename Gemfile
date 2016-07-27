@@ -20,8 +20,7 @@ gem 'redis', '~> 3.0'
 gem 'haml'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass', '~> 4.5.0'
-# waiting for rails 5 integration
-# gem 'simple-line-icons-rails'
+gem 'simple-line-icons-rails'
 gem 'magnific-popup-rails'
 gem 'owlcarousel-rails'
 gem 'animate-rails'
@@ -34,7 +33,6 @@ gem 'wow-rails'
 
 # tools
 gem 'phony_rails'
-
 
 group :development, :test do
   gem 'pry-rails'

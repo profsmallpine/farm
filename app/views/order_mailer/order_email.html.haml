@@ -43,7 +43,7 @@
                     %tbody
                       %tr
                         %td.padded{:style => "padding: 0;vertical-align: top;padding-left: 32px;padding-right: 32px;word-break: break-word;word-wrap: break-word"}
-                          %h1{:style => "Margin-top: 0;color: #565656;font-weight: normal;font-size: 52px;Margin-bottom: 22px;font-family: sans-serif;text-align: center;line-height: 58px"} New Contact Email
+                          %h1{:style => "Margin-top: 0;color: #565656;font-weight: normal;font-size: 52px;Margin-bottom: 22px;font-family: sans-serif;text-align: center;line-height: 58px"} New Order Email
                   %table.contents{:style => "border-collapse: collapse;border-spacing: 0;table-layout: fixed;width: 100%"}
                     %tbody
                       %tr
@@ -61,7 +61,11 @@
                       %tr
                         %td.padded{:style => "padding: 0;vertical-align: top;padding-left: 32px;padding-right: 32px;word-break: break-word;word-wrap: break-word"}
                           %p{:style => "Margin-top: 0;color: #565656;font-family: Georgia,serif;font-size: 21px;line-height: 32px;Margin-bottom: 32px;text-align: left"}
-                            = @contact.body
+                            = 'Phone: ' + @order.phone
+                            %br
+                            = 'How much: ' + @order.how_much
+                            %br
+                            = 'Special Requests: ' + @order.body
                   .column-bottom{:style => "font-size: 4px;line-height: 4px"} &#160;
         %td.border{:style => "padding: 0;vertical-align: top;font-size: 1px;line-height: 1px;background-color: #e9e9e9;width: 1px"} &#8203;
   %table.border{:style => "border-collapse: collapse;border-spacing: 0;font-size: 1px;line-height: 1px;background-color: #e9e9e9;Margin-left: auto;Margin-right: auto", :width => "602"}

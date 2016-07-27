@@ -17,29 +17,27 @@ class PagesController < ApplicationController
     @contact = Email.new
   end
 
-  def create_order
-    # TODO: setup active job to send mailer
-    # TODO: have mailer be "from" contact's email
+  def create_order_email
     # TODO: create pretty layout for mailer with tucker ff logo
     # TODO: test that mailer is working with gmail account
     @order = Email.new(order_params)
 
     if @order.valid?
+      OrderMailer.order_email(@order).deliver_now
       redirect_to orders_path, success: 'Order successfully sent.'
     else
+      flash.now[:error] = @order.errors.full_messages.to_sentence
       render 'orders'
     end
   end
 
-  def create_contact
-    # TODO: setup active job to send mailer
-    # TODO: have mailer be "from" contact's email
+  def create_contact_email
     # TODO: create pretty layout for mailer with tucker ff logo
     # TODO: test that mailer is working with gmail account
     @contact = Email.new(order_params)
 
     if @contact.valid?
-      ContactMailer.contact_email.deliver_now
+      ContactMailer.contact_email(@contact).deliver_now
       redirect_to contact_path, success: 'Message successfully sent.'
     else
       flash.now[:error] = @contact.errors.full_messages.to_sentence
@@ -50,6 +48,6 @@ class PagesController < ApplicationController
   private
 
   def order_params
-    params.require(:email).permit(:name, :phone, :email, :how_much, :body)
+    params.require(:email).permit(:name, :phone, :email, :how_much, :body, :to)
   end
 end

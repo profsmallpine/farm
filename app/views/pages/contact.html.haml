@@ -18,10 +18,10 @@
           %h2.module-subtitle Drop us a line
     .row
       .col-md-6.col-sm-offset-3
-        = form_for @contact, url: create_contact_path, method: 'POST' do |f|
+        = form_for @contact, url: create_contact_email_path, method: 'POST' do |f|
           .row
             .col-sm-12.form-group
-              = f.select :to,  @contact.to_options, { include_blank: 'Select your recipient' }, { class: 'dropdown form-control', required: true }
+              = f.select :to,  Email::TO_OPTIONS, { include_blank: 'Select your recipient' }, { class: 'dropdown form-control', required: true }
           .row
             .col-sm-6.form-group
               %label.sr-only{for: 'name'} Name

@@ -1,4 +1,3 @@
--# TODO: turn this into a form_for (with working email), maybe use formtastic
 %section#orders.module
   .container
     .row
@@ -9,7 +8,7 @@
     .row
       .col-sm-8.col-sm-offset-2
         = render 'shared/flash'
-        = form_for @order, url: create_order_path do |f|
+        = form_for @order, url: create_order_email_path do |f|
           .row
             .col-sm-6.form-group
               = f.text_field :name, class: 'form-control', placeholder: 'Name', required: true
