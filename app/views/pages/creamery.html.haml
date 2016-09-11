@@ -10,11 +10,9 @@
       %li.active
         %a{"data-toggle" => "tab", :href => "#tab1"} Hard Cheese
       %li
-        %a{"data-toggle" => "tab", :href => "#tab2"} Soft, Brined Cheese
+        %a{"data-toggle" => "tab", :href => "#tab2"} Fresh Cheese
       %li
-        %a{"data-toggle" => "tab", :href => "#tab3"} Fresh Cheese
-      %li
-        %a{"data-toggle" => "tab", :href => "#tab4"} Semi-Soft Cheese
+        %a{"data-toggle" => "tab", :href => "#tab3"} Semi-Soft Cheese
 
     .tab-content.long-down
       #tab1.tab-pane.active
@@ -31,26 +29,22 @@
               .menu
                 .row
                   .col-sm-12
-                    %h4.menu-title
-                      Harbinger
-                      %span.label.label-default
-                        [hahr-bin-jer] -  one that presages or foreshadows what
-                        is to come
+                    %h4.menu-title Harbinger
+                    %p.definition
+                      [hahr-bin-jer] -  one that presages or foreshadows what is
+                      to come
 
                     .menu-detail
-                      A young Manchego style cheese. We deviate from a
-                      traditional Manchego by washing this cheese every few days
-                      with Draught Work’s Oatmeal Stout, insuring a soft,
-                      easy slicing texture and a beautiful rind, as well as
-                      imparting hints of the beer’s unique flavor, creating a
-                      unique experience. The smooth texture makes this a great
-                      slicing cheese and the colorful rind makes it stand out
-                      on a cheese board. This cheese was highlighted in Sip
-                      Northwest’s 2015 Best of the West issue, paired with a
-                      local cider from Montana Ciderworks. Aged a minimum of
-                      3 months.
-                      %span.label.label-info
-                        Sold in 6-7 oz. wedges or 5-6 pound wheels
+                      Firm but not dry with gracefully smooth nutty flavors.
+                      We wash this cheese every few days with a local Montana
+                      brewery's Oatmeal Stout, insuring a soft, easy slicing
+                      texture and a beautiful rind, as well as imparting hints
+                      of the beer’s unique flavor, creating a unique experience.
+                      The smooth texture makes this a great slicing cheese and
+                      the colorful rind makes it stand out on a cheese board.
+                      This cheese was highlighted in Sip Northwest’s 2015 Best
+                      of the West issue, paired with a local cider from Montana
+                      Ciderworks. Aged a minimum of 3 months.
 
           .col-sm-6
             .menu-classic
@@ -64,45 +58,17 @@
               .menu
                 .row
                   .col-sm-12
-                    %h4.menu-title
-                      Sentinel
-                      %span.label.label-default
-                        [sent(ə)nəl] – to stand watch (check)
+                    %h4.menu-title Sentinel
+                    %p.definition [sent(ə)nəl] – to stand watch (check)
                     .menu-detail
-                      Our oldest cheese, a Pecorino Romano style hard cheese,
-                      perfect for grating but also for slicing. The Sentinel is
-                      aged for a minimum of 8 months, giving this cheese a
-                      distinct sharp and spicy flavor with mild buttery
-                      characteristics. Savor this cheese grated on top of your
-                      favorite pasta dish, or for desert with honey drizzled
-                      over the top.
+                      Our oldest cheese, perfect for grating but also for
+                      slicing. The Sentinel is aged for a minimum of 8 months,
+                      giving this cheese a distinct sharp and spicy flavor with
+                      mild buttery characteristics. Savor this cheese grated on
+                      top of your favorite pasta dish, or for desert with honey
+                      drizzled over the top.
 
       #tab2.tab-pane
-        .row
-          .col-sm-6
-            .menu-classic
-              %figure.overlay
-                = image_tag 'tucker_cheese_feta'
-                %figcaption
-                  = link_to '', image_path('tucker_cheese_feta'), class: 'popup-image', title: 'Feta cheese'
-                  .caption-inner
-                    .overlay-icon
-                      %span.icon-magnifier
-              .menu
-                .row
-                  .col-sm-12
-                    %h4.menu-title Feta
-                    .menu-detail
-                      Traditional Feta is made of 100% sheep’s milk or a
-                      combination of sheep and goat milk (only 30% goats milk is
-                      allowed in traditional feta). Our traditionally crafted
-                      sheep’s milk feta is smooth and creamy in texture, as only
-                      sheep milk cheeses can be, it is slightly salty and heavy
-                      on the cream in its flavor profile. Sticking to tradition,
-                      we sell our feta in whey brine (the salted whey from
-                      making the feta) instead of just in a salt brine.
-
-      #tab3.tab-pane
         .row
           .col-sm-6
             .menu-classic
@@ -130,6 +96,29 @@
           .col-sm-6
             .menu-classic
               %figure.overlay
+                = image_tag 'tucker_cheese_feta'
+                %figcaption
+                  = link_to '', image_path('tucker_cheese_feta'), class: 'popup-image', title: 'Feta cheese'
+                  .caption-inner
+                    .overlay-icon
+                      %span.icon-magnifier
+              .menu
+                .row
+                  .col-sm-12
+                    %h4.menu-title Feta
+                    .menu-detail
+                      Traditional Feta is made of 100% sheep’s milk or a
+                      combination of sheep and goat milk (only 30% goats milk is
+                      allowed in traditional feta). Our traditionally crafted
+                      sheep’s milk feta is smooth and creamy in texture, as only
+                      sheep milk cheeses can be, it is slightly salty and heavy
+                      on the cream in its flavor profile. Sticking to tradition,
+                      we sell our feta in whey brine (the salted whey from
+                      making the feta) instead of just in a salt brine.
+
+          .col-sm-6
+            .menu-classic
+              %figure.overlay
                 = image_tag 'tucker_cheese_aurora'
                 %figcaption
                   = link_to '', image_path('tucker_cheese_aurora'), class: 'popup-image', title: 'Ricotta Romana cheese'
@@ -139,10 +128,8 @@
               .menu
                 .row
                   .col-sm-12
-                    %h4.menu-title
-                      Aurora
-                      %span.label.label-default
-                        [ôˈrôrə] - the Roman goddess of dawn
+                    %h4.menu-title Aurora
+                    %p.definition [ôˈrôrə] - the Roman goddess of dawn
                     .menu-detail
                       A delicate fresh cheese with a perfect balance of decadent
                       creaminess and sweet bright tang. This elegantly simple
@@ -151,7 +138,7 @@
                       Perfect addition to any summer salad or added to winter
                       comfort foods for an extra velvety texture.
 
-      #tab4.tab-pane
+      #tab3.tab-pane
         .row
           .col-sm-6
             .menu-classic
@@ -165,10 +152,8 @@
               .menu
                 .row
                   .col-sm-12
-                    %h4.menu-title
-                      Zephyr
-                      %span.label.label-default [zef-er] – a gentle, westerly breeze
-
+                    %h4.menu-title Zephyr
+                    %p.definition [zef-er] – a gentle, westerly breeze
                     .menu-detail
                       A bloomy-rind blue cheese. This is a rich and creamy brie
                       style cheese with a soft smooth paste. We then contrast the
@@ -192,12 +177,11 @@
               .menu
                 .row
                   .col-sm-12
-                    %h4.menu-title
-                      Petrichor
-                      %span.label.label-default
-                        [PET-ri-kuhr] – a pleasant smell that frequently
-                        accompanies the first rain after a long period of warm,
-                        dry weather
+                    %h4.menu-title Petrichor
+                    %p.definition
+                      [PET-ri-kuhr] – a pleasant smell that frequently
+                      accompanies the first rain after a long period of warm,
+                      dry weather
                     .menu-detail
                       Our “baby” (young) blue cheese.  “Baby” in size and age
                       but not in flavor with a rich creamy texture and lots of
