@@ -62,7 +62,7 @@
                         %td.padded{:style => "padding: 0;vertical-align: top;padding-left: 32px;padding-right: 32px;word-break: break-word;word-wrap: break-word"}
                           %p{:style => "Margin-top: 0;color: #565656;font-family: Georgia,serif;font-size: 21px;line-height: 32px;Margin-bottom: 32px;text-align: left"}
                             Reply to:
-                            %a{href: @contact.email + "?subject=Contact Email from tuckerfamilyfarm.com"}= @contact.email
+                            %a{href: "mailto:#{@contact.email}?subject=Contact Email from tuckerfamilyfarm.com"}= @contact.email
                           %p{:style => "Margin-top: 0;color: #565656;font-family: Georgia,serif;font-size: 21px;line-height: 32px;Margin-bottom: 32px;text-align: left"}
                             = @contact.body
                   .column-bottom{:style => "font-size: 4px;line-height: 4px"} &#160;
