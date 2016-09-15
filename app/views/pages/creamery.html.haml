@@ -10,9 +10,9 @@
       %li.active
         %a{"data-toggle" => "tab", :href => "#tab1"} Hard Cheese
       %li
-        %a{"data-toggle" => "tab", :href => "#tab2"} Fresh Cheese
+        %a{"data-toggle" => "tab", :href => "#tab2"} Semi-Soft Cheese
       %li
-        %a{"data-toggle" => "tab", :href => "#tab3"} Semi-Soft Cheese
+        %a{"data-toggle" => "tab", :href => "#tab3"} Fresh Cheese
 
     .tab-content.long-down
       #tab1.tab-pane.active
@@ -73,76 +73,6 @@
           .col-sm-6
             .menu-classic
               %figure.overlay
-                = image_tag 'tucker_cheese_ricotta'
-                %figcaption
-                  = link_to '', image_path('tucker_cheese_ricotta'), class: 'popup-image', title: 'Ricotta Romana cheese'
-                  .caption-inner
-                    .overlay-icon
-                      %span.icon-magnifier
-              .menu
-                .row
-                  .col-sm-12
-                    %h4.menu-title Ricotta Romana
-                    .menu-detail
-                      This is a traditional ricotta, made with 100% sheep’s
-                      milk whey. Whey ricotta is uniquely different from
-                      ricotta made from milk – whole milk is used
-                      industrially to increase the yield. Our 100% whey
-                      ricotta is light, sweet and drier than its
-                      mass-produced counterpart. Enjoy simply with fresh
-                      summer fruit or with your favorite pasta dishes. This
-                      is ricotta the whey it was meant to be.
-
-          .col-sm-6
-            .menu-classic
-              %figure.overlay
-                = image_tag 'tucker_cheese_feta'
-                %figcaption
-                  = link_to '', image_path('tucker_cheese_feta'), class: 'popup-image', title: 'Feta cheese'
-                  .caption-inner
-                    .overlay-icon
-                      %span.icon-magnifier
-              .menu
-                .row
-                  .col-sm-12
-                    %h4.menu-title Feta
-                    .menu-detail
-                      Traditional Feta is made of 100% sheep’s milk or a
-                      combination of sheep and goat milk (only 30% goats milk is
-                      allowed in traditional feta). Our traditionally crafted
-                      sheep’s milk feta is smooth and creamy in texture, as only
-                      sheep milk cheeses can be, it is slightly salty and heavy
-                      on the cream in its flavor profile. Sticking to tradition,
-                      we sell our feta in whey brine (the salted whey from
-                      making the feta) instead of just in a salt brine.
-
-          .col-sm-6
-            .menu-classic
-              %figure.overlay
-                = image_tag 'tucker_cheese_aurora'
-                %figcaption
-                  = link_to '', image_path('tucker_cheese_aurora'), class: 'popup-image', title: 'Ricotta Romana cheese'
-                  .caption-inner
-                    .overlay-icon
-                      %span.icon-magnifier
-              .menu
-                .row
-                  .col-sm-12
-                    %h4.menu-title Aurora
-                    %p.definition [ôˈrôrə] - the Roman goddess of dawn
-                    .menu-detail
-                      A delicate fresh cheese with a perfect balance of decadent
-                      creaminess and sweet bright tang. This elegantly simple
-                      cheese is wonderful on toasted bread with fresh fruit for
-                      breakfast or crumbled on a salads or roasted vegetables.
-                      Perfect addition to any summer salad or added to winter
-                      comfort foods for an extra velvety texture.
-
-      #tab3.tab-pane
-        .row
-          .col-sm-6
-            .menu-classic
-              %figure.overlay
                 = image_tag 'tucker_cheese_zephyr'
                 %figcaption
                   = link_to '', image_path('tucker_cheese_zephyr'), class: 'popup-image', title: 'Zephyr cheese'
@@ -191,3 +121,73 @@
                       an ordinary burger into something remarkable. The rind on
                       this cheese is edible and delicious and should be enjoyed
                       as part of the experience.
+
+      #tab3.tab-pane
+        .row
+          .col-sm-6
+            .menu-classic
+              %figure.overlay
+                = image_tag 'tucker_cheese_ricotta'
+                %figcaption
+                  = link_to '', image_path('tucker_cheese_ricotta'), class: 'popup-image', title: 'Ricotta Romana cheese'
+                  .caption-inner
+                    .overlay-icon
+                      %span.icon-magnifier
+              .menu
+                .row
+                  .col-sm-12
+                    %h4.menu-title Ricotta Romana
+                    .menu-detail
+                      This is a traditional ricotta, made with 100% sheep’s
+                      milk whey. Whey ricotta is uniquely different from
+                      ricotta made from milk – whole milk is used
+                      industrially to increase the yield. Our 100% whey
+                      ricotta is light, sweet and drier than its
+                      mass-produced counterpart. Enjoy simply with fresh
+                      summer fruit or with your favorite pasta dishes. This
+                      is ricotta the whey it was meant to be.
+
+          .col-sm-6
+            .menu-classic
+              %figure.overlay
+                = image_tag 'tucker_cheese_feta'
+                %figcaption
+                  = link_to '', image_path('tucker_cheese_feta'), class: 'popup-image', title: 'Feta cheese'
+                  .caption-inner
+                    .overlay-icon
+                      %span.icon-magnifier
+              .menu
+                .row
+                  .col-sm-12
+                    %h4.menu-title Feta
+                    .menu-detail
+                      Traditional Feta is made of 100% sheep’s milk or a
+                      combination of sheep and goat milk (only 30% goats milk is
+                      allowed in traditional feta). Our traditionally crafted
+                      sheep’s milk feta is smooth and creamy in texture, as only
+                      sheep milk cheeses can be, it is slightly salty and heavy
+                      on the cream in its flavor profile. Sticking to tradition,
+                      we sell our feta in whey brine (the salted whey from
+                      making the feta) instead of just in a salt brine.
+
+          .col-sm-6
+            .menu-classic
+              %figure.overlay
+                = image_tag 'tucker_cheese_aurora'
+                %figcaption
+                  = link_to '', image_path('tucker_cheese_aurora'), class: 'popup-image', title: 'Aurora cheese'
+                  .caption-inner
+                    .overlay-icon
+                      %span.icon-magnifier
+              .menu
+                .row
+                  .col-sm-12
+                    %h4.menu-title Aurora
+                    %p.definition [ôˈrôrə] - the Roman goddess of dawn
+                    .menu-detail
+                      A delicate fresh cheese with a perfect balance of decadent
+                      creaminess and sweet bright tang. This elegantly simple
+                      cheese is wonderful on toasted bread with fresh fruit for
+                      breakfast or crumbled on a salads or roasted vegetables.
+                      Perfect addition to any summer salad or added to winter
+                      comfort foods for an extra velvety texture.
