@@ -94,7 +94,7 @@ Rails.application.configure do
     domain:               'farm-staging.herokuapp.com',
     address:              'smtp.sendgrid.net',
     port:                 587,
-    authentication:       :plain,
+    authentication:       :login,
     enable_starttls_auto: true
   }
 end
