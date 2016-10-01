@@ -14,18 +14,25 @@
         %li{class: "#{'active' if current_page?(root_path)}"}
           = link_to 'Home', root_path
         %li.dropdown
-          %a.dropdown-toggle{class: "#{'active' if current_page?(animals_path) || current_page?(orders_path)}", href: '#', 'data-toggle' => 'dropdown', 'aria-expanded' => true}
+          %a.dropdown-toggle{class: "#{'active' if current_page?(farm_animals_path) || current_page?(farm_orders_path) || current_page?(farm_careers_path)}", href: '#', 'data-toggle' => 'dropdown', 'aria-expanded' => true}
             Farm
             %span.caret
           %ul.dropdown-menu{role: 'menu'}
-            %li{class: "#{'active' if current_page?(animals_path)}"}
-              = link_to 'Animals', animals_path
-            %li{class: "#{'active' if current_page?(orders_path)}"}
-              = link_to 'Orders', orders_path
-        %li{class: "#{'active' if current_page?(creamery_path)}"}
-          = link_to 'Creamery', creamery_path
-        %li{class: "#{'active' if current_page?(careers_path)}"}
-          = link_to 'Careers', careers_path
+            %li{class: "#{'active' if current_page?(farm_animals_path)}"}
+              = link_to 'Animals', farm_animals_path
+            %li{class: "#{'active' if current_page?(farm_orders_path)}"}
+              = link_to 'Orders', farm_orders_path
+            %li{class: "#{'active' if current_page?(farm_careers_path)}"}
+              = link_to 'Careers', farm_careers_path
+        %li.dropdown
+          %a.dropdown-toggle{class: "#{'active' if current_page?(creamery_cheese_path) || current_page?(creamery_careers_path)}", href: '#', 'data-toggle' => 'dropdown', 'aria-expanded' => true}
+            Creamery
+            %span.caret
+          %ul.dropdown-menu{role: 'menu'}
+            %li{class: "#{'active' if current_page?(creamery_cheese_path)}"}
+              = link_to 'Cheese', creamery_cheese_path
+            %li{class: "#{'active' if current_page?(creamery_careers_path)}"}
+              = link_to 'Careers', creamery_careers_path
         %li{class: "#{'active' if current_page?(gallery_path)}"}
           = link_to 'Gallery', gallery_path
         %li{class: "#{'active' if current_page?(contact_path)}"}

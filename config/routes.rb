@@ -4,11 +4,19 @@ Rails.application.routes.draw do
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'
   root to: 'pages#index'
-  get '/creamery', to: 'pages#creamery'
-  get '/animals', to: 'pages#animals'
-  get '/orders', to: 'pages#orders'
-  post '/orders', to: 'pages#create_order_email', as: :create_order_email
-  get '/careers', to: 'pages#careers'
+  # Creamery
+  get '/creamery/cheese', to: 'creamery#cheese'
+  get '/creamery/careers_download' => 'creamery#careers_download'
+  get '/creamery/careers', to: 'creamery#careers'
+
+  # Farm
+  get '/farm/orders', to: 'farm#orders'
+  get '/farm/animals', to: 'farm#animals'
+  post '/farm/orders', to: 'farm#create_order_email', as: :create_farm_order_email
+  get '/farm/careers', to: 'farm#careers'
+  get '/farm/careers_download' => 'farm#careers_download'
+
+  # Pages
   get '/gallery', to: 'pages#gallery'
   get '/contact', to: 'pages#contact'
   post '/contact', to: 'pages#create_contact_email', as: :create_contact_email
