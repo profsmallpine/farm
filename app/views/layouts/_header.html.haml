@@ -14,6 +14,10 @@
         %li{class: "#{'active' if current_page?(root_path)}"}
           = link_to 'Home', root_path
         %li.dropdown
+          %a{href: 'https://store.tuckerfamilyfarm.com/'}
+            Store
+            %span.label.label-warning New
+        %li.dropdown
           %a.dropdown-toggle{class: "#{'active' if current_page?(farm_animals_path) || current_page?(farm_orders_path) || current_page?(farm_careers_path)}", href: '#', 'data-toggle' => 'dropdown', 'aria-expanded' => true}
             Farm
             %span.caret
