@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/creamery/cheese', to: 'creamery#cheese'
   get '/creamery/careers_download' => 'creamery#careers_download'
   get '/creamery/careers', to: 'creamery#careers'
+  get '/creamery/apply_now_download' => 'creamery#apply_now_download'
 
   # Farm
   get '/farm/orders', to: 'farm#orders'
