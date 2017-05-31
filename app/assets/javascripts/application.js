@@ -27,7 +27,6 @@
 //= require bigvideo
 //= require jqBootstrapValidation
 //= require jquery.matchHeight
-//= require twitterFetcher
 //= require fitvids.js
 //= require smoothscroll
 //= require wow
