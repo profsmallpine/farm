@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   post '/farm/orders', to: 'farm#create_order_email', as: :create_farm_order_email
   get '/farm/careers', to: 'farm#careers'
   get '/farm/careers_download' => 'farm#careers_download'
+  get '/farm/apply_now_download' => 'farm#apply_now_download'
 
   # Pages
   get '/gallery', to: 'pages#gallery'
