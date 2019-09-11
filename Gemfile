@@ -1,18 +1,18 @@
 source 'https://rubygems.org'
 
-ruby '2.3.7'
+ruby '2.5.5'
 
 # default gems
 
-gem 'rails', '~> 5.0'
+gem 'rails', '~> 6.0.0'
 gem 'pg', '~> 0.18'
 gem 'puma'
 gem 'sass-rails', '~> 5.0.5'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.1'
+gem 'coffee-rails', '~> 5.0.0'
 gem 'jquery-rails'
 # gem 'turbolinks' - kills page load js
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.9.1'
 gem 'redis', '~> 3.0'
 
 # assets
@@ -20,9 +20,9 @@ gem 'redis', '~> 3.0'
 gem 'haml'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass', '~> 4.5.0'
-gem 'simple-line-icons-rails'
+gem 'simple-line-icons-rails', git: "git://github.com/profsmallpine/simple-line-icons-rails"
 gem 'magnific-popup-rails'
-gem 'owlcarousel-rails'
+gem 'owlcarousel-rails', '~> 1.1.3.3'
 gem 'animate-rails'
 gem 'bootstrap-datepicker-rails'
 gem 'jquery-timepicker-rails'
